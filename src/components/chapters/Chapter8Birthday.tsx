@@ -90,8 +90,7 @@ const Chapter8Birthday: React.FC = () => {
                     <p className="italic text-love-soft">And here's my real gift to you...</p>
                     
                     {/* Replace this with details about your actual gift */}
-                    <p className="font-bold mt-4">A weekend getaway to [special place]</p>
-                    <p className="text-white/80">Just you and me, making more memories to add to our story.</p>
+                    <p className="font-bold mt-4">[taw ta3ref ghodwa ...]</p>
                   </div>
                 </div>
               </div>

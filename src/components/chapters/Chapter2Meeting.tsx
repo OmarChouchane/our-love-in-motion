@@ -28,7 +28,7 @@ const Chapter2Meeting: React.FC = () => {
                 {/* Replace with your actual image */}
                 <div className="aspect-video bg-black/50 rounded overflow-hidden border border-white/20">
                   <img 
-                    src="/placeholder.svg" 
+                    src="/1.JPG" 
                     alt="The moment we met" 
                     className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                   />

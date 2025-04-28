@@ -30,6 +30,7 @@ const loveReasons: LoveReason[] = [
   { text: "How you make me feel safe" },
   { text: "Because you're you" },
   { text: "Everything that makes you unique" },
+  { text: "Your endless positivity" } // NEW 22nd reason added!
 ];
 
 const Chapter4Reasons: React.FC = () => {
@@ -47,7 +48,7 @@ const Chapter4Reasons: React.FC = () => {
     <div className="chapter-section min-h-screen py-20 bg-gradient-to-b from-love-dark to-[#1a181d]">
       <FadeInSection>
         <h2 className="text-3xl md:text-4xl font-playfair mb-16 text-center glow-effect">
-          21 Reasons I Love You
+          22 Reasons I Love You
         </h2>
       </FadeInSection>
 

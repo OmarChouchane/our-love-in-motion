@@ -117,10 +117,6 @@ const Index = () => {
             <Chapter4Reasons />
           </div>
           
-          {/* Inside Jokes */}
-          <div ref={(el) => chapterRefs.current[4] = el}>
-            <Chapter5InsideJokes />
-          </div>
           
           {/* Love Letter */}
           <div ref={(el) => chapterRefs.current[5] = el}>

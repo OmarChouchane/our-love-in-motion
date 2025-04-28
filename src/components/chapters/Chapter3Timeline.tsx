@@ -14,34 +14,48 @@ const timelineEvents: TimelineEvent[] = [
   {
     date: 'First Date',
     title: 'Our Beginning',
-    description: 'That nervous excitement as we got to know each other',
-    icon: '🌹'
+    description: 'Dinner at "Da Piero" — the start of a beautiful connection.',
+    icon: '🌟'
   },
   {
-    date: 'First Kiss',
-    title: 'Unforgettable Moment',
-    description: 'A perfect moment that felt like time stood still',
-    icon: '💋'
+    date: 'First Gift',
+    title: 'A Special Surprise',
+    description: 'Receiving a hand watch — a timeless memory.',
+    icon: '🎁'
   },
   {
-    date: 'First Trip',
-    title: 'Adventures Together',
-    description: 'Exploring the world, creating memories that will last forever',
+    date: 'Baccalaureate Success',
+    title: 'Milestone Achieved',
+    description: 'Proud and joyful moments celebrating success together.',
+    icon: '🎓'
+  },
+  {
+    date: 'New Journeys',
+    title: 'Different Cities, Same Bond',
+    description: 'From Tunis to Sousse, distance never changed our efforts.',
+    icon: '🛤️'
+  },
+  {
+    date: 'Creating Opportunities',
+    title: 'Time Together',
+    description: 'Always finding ways to meet, no matter the distance.',
+    icon: '⏳'
+  },
+  {
+    date: 'Ups and Downs',
+    title: 'Growing Stronger',
+    description: 'Overcoming challenges with patience and support.',
+    icon: '🌿'
+  },
+  {
+    date: 'New Horizons',
+    title: 'A New Chapter in France',
+    description: 'A bittersweet step forward, full of hope and courage.',
     icon: '✈️'
-  },
-  {
-    date: 'Lazy Sundays',
-    title: 'Simple Joys',
-    description: 'Sometimes the best moments are the quiet ones together',
-    icon: '🛋️'
-  },
-  {
-    date: 'Through It All',
-    title: 'Ups and Downs',
-    description: 'Growing stronger through laughter and challenges',
-    icon: '😂💔'
   }
 ];
+
+
 
 const Chapter3Timeline: React.FC = () => {
   return (

@@ -4,13 +4,15 @@ import FadeInSection from '../FadeInSection';
 import TypewriterText from '../TypewriterText';
 
 const letterParagraphs = [
-  "My Dearest,",
+  "My Dearest Sousou,",
   "I wanted to create something special for you - something that would make you feel as loved as you truly are. This is my heart, digitized but no less real.",
   "From the moment we met, you've filled my life with joy, laughter, and love beyond what I thought possible. Every day with you is a gift that I cherish.",
   "I made this because I love you, and because our love is art. It deserves to be celebrated, remembered, and shared between us.",
   "Happy birthday, my love. Here's to many more years of creating beautiful memories together.",
-  "Forever yours,"
+  "Forever yours,",
+  "Omar"
 ];
+
 
 const Chapter6Letter: React.FC = () => {
   const [visibleParagraphs, setVisibleParagraphs] = useState(0);

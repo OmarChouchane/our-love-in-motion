@@ -8,40 +8,41 @@ import PolaroidPhoto from '../PolaroidPhoto';
 const galleryItems = [
   {
     id: 1,
-    image: '/placeholder.svg',
-    caption: 'This day was magic',
+    image: '/bac-sport.jpg',
+    caption: 'Bac Sport',
     rotation: -3
   },
   {
     id: 2,
-    image: '/placeholder.svg',
-    caption: 'I fell in love all over again',
+    image: '/awel-le7yet-jaddi.jpg',
+    caption: 'Awel Le7yet Jaddi',
     rotation: 2
   },
   {
     id: 3,
-    image: '/placeholder.svg',
-    caption: 'Our special place',
+    image: '/awel-match-koura.jpg',
+    caption: 'Awel Match Koura',
     rotation: -1
   },
   {
     id: 4,
-    image: '/placeholder.svg',
-    caption: 'Remember this sunset?',
+    image: '/awel-frippe.jpg',
+    caption: 'Awel Habta Lel Frippe',
     rotation: 3
   },
   {
     id: 5,
-    image: '/placeholder.svg',
-    caption: 'Our first trip together',
+    image: '/awel-camping.jpg',
+    caption: 'Awel Camping',
     rotation: -2
   },
+  
   {
     id: 6,
-    image: '/placeholder.svg',
-    caption: 'The day we couldn\'t stop laughing',
+    image: '/awel-manege.jpg',
+    caption: 'Awel Marra Nemchiw Lel Manège',
     rotation: 1
-  }
+  },
 ];
 
 const Chapter7Gallery: React.FC = () => {
@@ -64,7 +65,7 @@ const Chapter7Gallery: React.FC = () => {
                 caption={item.caption}
                 rotation={item.rotation}
                 onClick={() => setSelectedPhoto(item)}
-                className="animate-float"
+                className=""
               />
             </FadeInSection>
           ))}
