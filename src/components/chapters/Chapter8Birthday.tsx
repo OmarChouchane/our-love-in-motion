@@ -1,9 +1,16 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FadeInSection from '../FadeInSection';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
-import confetti from 'canvas-confetti';
+// Import as a type to avoid direct import issues
+import type { CreateTypes } from 'canvas-confetti';
+
+declare global {
+  interface Window {
+    confetti: CreateTypes;
+  }
+}
 
 const Chapter8Birthday: React.FC = () => {
   const [revealed, setRevealed] = useState(false);
@@ -19,26 +26,27 @@ const Chapter8Birthday: React.FC = () => {
       return Math.random() * (max - min) + min;
     };
     
-    const confettiInterval = setInterval(() => {
-      const timeLeft = animationEnd - Date.now();
-      
-      if (timeLeft <= 0) {
-        return clearInterval(confettiInterval);
-      }
-      
-      const particleCount = 50 * (timeLeft / duration);
-      
-      // Launch confetti from both sides
-      confetti({
-        particleCount: Math.floor(randomInRange(10, 30)),
-        angle: randomInRange(55, 125),
-        spread: randomInRange(50, 70),
-        origin: { x: randomInRange(0.1, 0.9), y: randomInRange(0.1, 0.3) },
-        colors: ['#ea384c', '#FFDEE2', '#ffffff'],
-        shapes: ['circle', 'square'],
-        gravity: 0.5
-      });
-    }, 250);
+    // Check if confetti is available in window
+    if (window.confetti) {
+      const confettiInterval = setInterval(() => {
+        const timeLeft = animationEnd - Date.now();
+        
+        if (timeLeft <= 0) {
+          return clearInterval(confettiInterval);
+        }
+        
+        // Launch confetti from both sides
+        window.confetti({
+          particleCount: Math.floor(randomInRange(10, 30)),
+          angle: randomInRange(55, 125),
+          spread: randomInRange(50, 70),
+          origin: { x: randomInRange(0.1, 0.9), y: randomInRange(0.1, 0.3) },
+          colors: ['#ea384c', '#FFDEE2', '#ffffff'],
+          shapes: ['circle', 'square'],
+          gravity: 0.5
+        });
+      }, 250);
+    }
   };
 
   return (
