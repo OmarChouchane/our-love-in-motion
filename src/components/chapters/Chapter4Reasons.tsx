@@ -27,10 +27,12 @@ const loveReasons: LoveReason[] = [
   { text: "How we can talk for hours" },
   { text: "The way you support my dreams" },
   { text: "Your thoughtfulness" },
+  { text: "Your endless positivity" },
   { text: "How you make me feel safe" },
   { text: "Because you're you" },
   { text: "Everything that makes you unique" },
-  { text: "Your endless positivity" } // NEW 22nd reason added!
+  { text: "Because you're you" }
+  
 ];
 
 const Chapter4Reasons: React.FC = () => {
