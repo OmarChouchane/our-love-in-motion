@@ -84,6 +84,7 @@ const Index = () => {
   }, []);
 
   return (
+    
     <div className="min-h-screen bg-love-dark text-white overflow-x-hidden">
       <FloatingHearts count={20} />
       

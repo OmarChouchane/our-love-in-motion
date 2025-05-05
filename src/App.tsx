@@ -26,6 +26,7 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <Analytics />
       <TooltipProvider>
         {/* Background music hidden audio element */}
         <audio id="background-music" loop>
